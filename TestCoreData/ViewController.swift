@@ -9,10 +9,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+   
+    @IBOutlet weak var CenterImageView: UIImageView!
+    
+    let file: DataReadWrite = FileData()
+    let full : DataFullAccess = FileData()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        file.write(name: "333", age: 480, image: #imageLiteral(resourceName: "sistacafe_color.jpg"))
+        //full.removeAll()
+
+        for a in file.read(Sort_ID_ASC: true)
+        {
+            
+            print(a.id ,a.names ?? "",a.age)
+            guard let photo = a.photo else { return }
+            guard let image = UIImage(data: photo) else { return }
+            CenterImageView.image = image
+            
+        }
+        
+        print("------")
+        
+        for a in file.find(id: "17")
+        {
+            
+            print(a.id ,a.names ?? "",a.age)
+            guard let photo = a.photo else { return }
+            guard let image = UIImage(data: photo) else { return }
+            CenterImageView.image = image
+            
+        }
+        
+        print("-----")
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +52,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    
 }
 

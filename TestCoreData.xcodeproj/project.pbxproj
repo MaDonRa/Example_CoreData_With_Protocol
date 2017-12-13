@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54B7DD71FD0F90600ADDEA1 /* ManageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B7DD61FD0F90600ADDEA1 /* ManageData.swift */; };
+		F54B7DD91FD10F6500ADDEA1 /* sistacafe_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54B7DD81FD10F6400ADDEA1 /* sistacafe_color.jpg */; };
 		F5B706381FC2DC9D0004BB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B706371FC2DC9D0004BB01 /* AppDelegate.swift */; };
 		F5B7063A1FC2DC9D0004BB01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B706391FC2DC9D0004BB01 /* ViewController.swift */; };
 		F5B7063D1FC2DC9D0004BB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B7063B1FC2DC9D0004BB01 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F54B7DD61FD0F90600ADDEA1 /* ManageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageData.swift; sourceTree = "<group>"; };
+		F54B7DD81FD10F6400ADDEA1 /* sistacafe_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sistacafe_color.jpg; sourceTree = "<group>"; };
 		F5B706341FC2DC9D0004BB01 /* TestCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B706371FC2DC9D0004BB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B706391FC2DC9D0004BB01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				F5B706371FC2DC9D0004BB01 /* AppDelegate.swift */,
 				F5B706391FC2DC9D0004BB01 /* ViewController.swift */,
+				F54B7DD61FD0F90600ADDEA1 /* ManageData.swift */,
+				F54B7DD81FD10F6400ADDEA1 /* sistacafe_color.jpg */,
 				F5B7063B1FC2DC9D0004BB01 /* Main.storyboard */,
 				F5B706411FC2DC9D0004BB01 /* Assets.xcassets */,
 				F5B706431FC2DC9D0004BB01 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 				F5B706451FC2DC9D0004BB01 /* LaunchScreen.storyboard in Resources */,
 				F5B706421FC2DC9D0004BB01 /* Assets.xcassets in Resources */,
 				F5B7063D1FC2DC9D0004BB01 /* Main.storyboard in Resources */,
+				F54B7DD91FD10F6500ADDEA1 /* sistacafe_color.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 			files = (
 				F5B7063A1FC2DC9D0004BB01 /* ViewController.swift in Sources */,
 				F5B706401FC2DC9D0004BB01 /* TestCoreData.xcdatamodeld in Sources */,
+				F54B7DD71FD0F90600ADDEA1 /* ManageData.swift in Sources */,
 				F5B706381FC2DC9D0004BB01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
