@@ -165,40 +165,18 @@ class FileData: DataReader , DataFinder , DataWriter , DataRemoveAll , DataRemov
         return results.count
     }
     
-    func removeAll()
-    {
+    func removeAll() {
         // Clear DATA
         guard let Manage = ManageData() else { return }
         
-        let request = NSFetchRequest<UserName>(entityName: "UserName")
-        request.includesSubentities=false // Delete All Row
-        request.returnsObjectsAsFaults=false // Delete All Row
-
-        do {
-            
-            let results:[UserName] = try Manage.fetch(request)
-            
-            //print("Amount \(results.count)")
-            
-            for res in results
-            {
-                
-                Manage.delete(res)
-                
-            }
-            
-        }
-        catch let error
-        {
-            
-            print("Error Remove Core Data \(error)")
-            
-        }
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "DB_Beacon")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
         
         do {
+            try Manage.execute(deleteRequest)
             try Manage.save()
-        }
-        catch _ {
+        } catch {
+            print ("There was an error \(error)")
         }
         
         print("Remove ALL")
